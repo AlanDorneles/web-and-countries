@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Orbitron&family=Roboto:ital,wght@0,400;1,100&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron';
+  
+}
+body{
+  background-color: #010a13;
+  color: #162a1b;
+  color: rgb(3, 38, 65);
+  padding: 0 0 2em 0;
+}
+.navbar{
+  background-color: #010a13;
+}
+.d-flex{
+  width: 70%; 
+}
+a{
+  color: #032641 !important;
+  text-shadow: 0 0 30px rgba(7, 76, 129, 0.8);
+}
+a:hover{
+  color: #074c81cc !important
+  
+}
+button, input{
+  background-color: #010a13 !important;
+  border-color: #043b6e !important;
+  color:rgba(7, 76, 129, 0.8)!important;
+}
+button:hover{
+  color: rgba(7, 76, 129, 0.8) !important;
+}
+input::placeholder{
+  color:rgba(7, 76, 129, 0.8) !important ;
+
+}
+.initial{
+  width: 90%;
+  margin-left: 2.5rem;
+
+}
+.container-cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin-top: 2em;
+  grid-gap: 2em;   
+}
+
+.container-cards div{
+  background-color: transparent;
+  color: #043b6e;
+  border: 1px solid #043b6e;
+  border-radius: 10px;
+  display: flex;
+  padding: 5%;
+  min-height: 25vh; 
+
+}
+.container-cards div:hover{
+  transform:scale(1.05);
+}
+@media screen and (max-width : 524px){
+  .navbar-brand{
+    display: none;
+  }
+  div.container-fluid{
+    justify-content: center !important;
+  }
+  .text-handler{
+    font-size: 1.3em !important;
+  }
+
+}
+.flag{
+  width: 35px;
+  height: 35px;
+  min-height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-self: self-end;
+  border: 1px solid rgba(9, 106, 197, 0.75);
+  transform: translate(10%, -10%);
+}
+
+div p {
+  border-right: solid 3px rgba(9, 106, 197, 0.75);
+  color: #096ac5;
+  animation: typing 3.5s steps(30, end) 1s 1 normal both,
+  blink-caret 600ms steps(30,end) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  padding: 0.5em;
+
+}
+/* The typing effect */
+
+@keyframes typing {
+  from{width: 0%;}
+  to{width: 100%;}
+}
+
+/* cursor animations */
+
+@keyframes blink-caret{
+  from{border-right-color:rgba(9, 106, 197, 0.75);}
+  to{border-right-color: transparent;}
+}
+a{
+  animation: pulse 4s infinite;
+  cursor: pointer;
+}
+@keyframes pulse{
+   0%, 25%,50%,75%,100% {
+    color: #FFF;
+    text-shadow: 0 0 6px #0b5cf1, 0 0 50px #0b5cf1, 0 0 100px #0b5cf1;
+    -webkit-text-stroke: 0.08px white;
+    
+  }
+  
+  10%, 90% {
+    color: rgb(3, 38, 65);
+    text-shadow: none;
+  }
+}
+::-webkit-scrollbar{
+  background-color: #010a13;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #0b5cf1;
+  border-radius: 10px;
+  width: 2px;
+
+}
+
+#submit{
+  margin-left: 5px;
+}
